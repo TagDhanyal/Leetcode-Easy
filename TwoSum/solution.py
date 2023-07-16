@@ -6,6 +6,7 @@ class Solution:
             complement = target - num
             if complement in arr:
                 return [arr[complement], i]
+                # you can also do this to go forward in a array {print(numbs[i])}
             arr[num] = i
         return []
 
@@ -16,3 +17,14 @@ target = 9
 solution = Solution()
 indices = solution.twoSum(nums, target)
 print(indices)
+"""
+you can reverse this array like this
+
+"""
+arr = [1, 2, 6, 10]
+
+# this is going backwards in a array
+index = len(numbs)-1 
+while index >=0:
+    print(index)
+    index -= 1
